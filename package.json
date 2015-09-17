@@ -1,0 +1,14 @@
+{
+  "name": "vendimia",
+  "version": "0.0.0",
+  "description": "A time tracking app for freelancers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dot": "^1.0.3",
+    "express": "^4.13.3"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Proyecto Vendimia",
+  "description": "Time Tracking for freelancers",
+  //"repository": "https://github.com/heroku/node-js-getting-started",
+  //"logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
