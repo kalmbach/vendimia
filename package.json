@@ -4,11 +4,15 @@
   "description": "A time tracking app for freelancers",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "dot": "^1.0.3",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "morgan": "^1.6.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.7.1"
+  }
 }

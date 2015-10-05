@@ -1,4 +1,5 @@
 var express = require('express');
+var morgan = require("morgan");
 var http = require("http");
 var path = require("path");
 var dot = require("dot");
@@ -9,12 +10,12 @@ var dots = dot.process({ path: path.join(root, "templates") });
 
 app.set('port', (process.env.PORT || 5000));
 
-app.get('/', function(request, response) {
-  var body = dots.Index({ title: "Node App with doT" });
-  response.setHeader("Content-Type", "text/html; charset=utf-8");
-  response.setHeader("Content-Length", Buffer.byteLength(body));
-  response.writeHead(500);
-  response.end(body);
+app.use(morgan('dev'));
+app.use('/assets', express.static(path.join(root, "assets")));
+app.use('/assets', express.static(path.join(root, "assets", "images")));
+
+app.get('/', function(req, res) {
+  res.end(dots.Index());
 });
 
 var httpServer = http.createServer(app);

@@ -1,11 +1,33 @@
 <!doctype html>
-
 <html>
   <head>
-    <title>{{= it.title }}</title>
+    <title>Vendimia App</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
   </head>
-
   <body>
-    <h1>Hola!</h1>
+    <div class="panel">
+      <h1>Vendimia</h1>
+      <div class="login">
+        <h2>Time Tracking for <span class="red bold">Freelancers</span></h2>
+        <form>
+          <div>
+            <input id="account_name" name="account[name]" placeholder="username">
+          </div>
+          <div>
+            <input id="account_password" name="account[password]" type="password" placeholder="password">
+          </div>
+          <div>
+            <input class="button" name="commit" value="Sign in" type="submit">
+          </div>
+          <div class="center">
+            <label><input name="remember" checked="" type="checkbox"/>Keep me signed in</label>
+          </div>
+        </form>
+        <div class="bottom">
+          <a id="forgot-pw" href="/forgot">I <span class="red">forgot</span> my password</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
