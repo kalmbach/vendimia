@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'Lobster';
+  src: url('lobster.otf');
+}
+
+html {
+  background: linear-gradient(rgba(42, 45, 52, 0.8), rgba(42, 45, 52, 0.8)),
+              url("body-background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background-color: #B61924;
+}
+
+.panel {
+  font-family: "Source Sans Pro";
+  font-size: 1.3em;
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  background-color: #333A44;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0px 0px -150px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.panel h1 {
+  font-family: 'Lobster';
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+  color: #EDEAE3;
+  margin-top: -4px;
+  padding-top: 20px;
+  height: 5%;
+}
+
+.panel h2 {
+  font-weight: 400;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1.3em;
+  padding: 20px 20px 0 20px;
+}
+
+.panel a {
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.panel .login {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #FDFDFD;
+  width: 100%;
+}
+
+.panel .login label {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.panel .login div {
+  width: 220px;
+  margin: auto;
+  padding: 5px 10px 5px 10px;
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+.panel .login input {
+  width: 200px;
+  height: 30px;
+  padding: 5px 10px 5px 10px;
+
+  border-radius: 4px;
+  border: 1px solid;
+
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+
+.panel .login input.button {
+  font-weight: bold;
+  width: 222px;
+  height: 40px;
+  background: #FE2E62;
+  border: 0px;
+  color: #EDEAE3;
+}
+
+.panel .login input[type="checkbox"] {
+  width: 15px;
+  vertical-align: middle;
+}
+
+.panel .login input:focus {
+  box-shadow: 0 0 5px rgba(198, 120, 143, 1);
+  border: 1px solid rgba(198, 120, 143, 1);
+}
+
+.red {
+  color: #FE2E62;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.panel .login .bottom {
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+  margin-top: -10px;
+}
