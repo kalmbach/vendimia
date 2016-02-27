@@ -18,6 +18,10 @@ app.get('/', function(req, res) {
   res.end(dots.Index());
 });
 
+app.get('/paleta', function(req, res) {
+  res.end(dots.Paleta());
+});
+
 var httpServer = http.createServer(app);
 httpServer.listen(app.get('port'), function() {
   console.log('HTTP Server listening on port %d', httpServer.address().port);

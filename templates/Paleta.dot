@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Paleta de Colores</title>
+  <style>
+    div { float: left; width: 12%; height: 500px; }
+    body { margin: 0; padding: 0; }
+  </style>
+  </head>
+  <body>
+    <div style="background-color: #2A2D34; color: white;">#2A2D34</div>
+    <div style="background-color: #FDFDFD; color: black;">#FDFDFD</div>
+    <div style="background-color: #333A44; color: white;">#333A44</div>
+    <div style="background-color: #FE2E62; color: white;">#FE2E62</div>
+    <div style="background-color: #C79DAB; color: black;">#C79DAB</div>
+    <div style="background-color: #C6375F; color: white;">#C6375F</div>
+    <div style="background-color: #5B5D64; color: white;">#5B5D64</div>
+    <div style="background-color: #C6788F; color: black;">#C6788F</div>
+  </body>
+</html>
